@@ -40,23 +40,23 @@
 
 
 //Ciclo for
-
 //    3. Il software deve chiedere per 10 volte all’utente di inserire un numero.
 //       Il programma stampa la somma di tutti i numeri inseriti.
 
-int[] array = new int[10];
-int sum = 0; 
+//int[] array = new int[10];
+//int sum = 0; 
 
-for (var i = 0; i < 10; i++)
-{
-    Console.WriteLine("Inserisci un numero:");
-    int num = Convert.ToInt32(Console.ReadLine());
+//for (var i = 0; i < 10; i++)
+//{
+//    Console.WriteLine("Inserisci un numero:");
+//    int num = Convert.ToInt32(Console.ReadLine());
 
-    array[i] = num;
+//    array[i] = num;
 
-    sum += num;
-}
-    Console.WriteLine($"Somma: {sum}");
+//    sum += num;
+//}
+
+//Console.WriteLine($"Somma: {sum}");
 
 
 
@@ -71,7 +71,7 @@ for (var i = 0; i < 10; i++)
 
 
 
-//Operatore modulo
+//OPERATORE MODULO
 //    5. Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 
 //Console.WriteLine("Inserisci un numero:");
@@ -83,8 +83,7 @@ for (var i = 0; i < 10; i++)
 
 
 
-//Array
-
+//ARRAY
 //    6. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 
 //string[] guestList = { "Davide", "Thomas", "Claudia", "Emily", "Salvatore" };
@@ -121,6 +120,15 @@ for (var i = 0; i < 10; i++)
 
 //    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
 int[] numbersArray = { 2, 5, 3, 4, 1 };
+int sum = 0; 
+
+for (int i=0; i<numbersArray.Length; i++)
+{
+    if (i % 2 != 0)
+    sum += numbersArray[i]; 
+}
+
+Console.WriteLine("Somma: " + sum);
 
 
 

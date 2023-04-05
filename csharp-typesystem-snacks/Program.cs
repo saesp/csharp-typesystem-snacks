@@ -44,11 +44,22 @@
 //    3. Il software deve chiedere per 10 volte all’utente di inserire un numero.
 //       Il programma stampa la somma di tutti i numeri inseriti.
 
-//for (var i=0; i < 10; i++)
-//{
-//    Console.WriteLine("Inserisci un numero:");
-//    int num = Convert.ToInt32(Console.ReadLine());
-//}
+using System;
+
+int[] array = new int[10];
+
+for (var i = 0; i < 10; i++)
+{
+    Console.WriteLine("Inserisci un numero:");
+    int num = Convert.ToInt32(Console.ReadLine());
+
+    array[i] = num;
+}
+
+int sum = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6] + array[7] + array[8] + array[9];
+
+Console.WriteLine($"Somma: { sum }");
+
 
 
 //    4. Calcola la somma e la media dei numeri da 2 a 10.
@@ -91,32 +102,24 @@
 //7.Crea un array vuoto.
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
 
-int[] numbersArray = new int[6];
-for (int i = 0; i < 6; i++)
-{
-    Console.WriteLine("Inserisci un numero:");
-    int num = Convert.ToInt32(Console.ReadLine());
+//int[] numbersArray = new int[6];
+//for (int i = 0; i < 6; i++)
+//{
+//    Console.WriteLine("Inserisci un numero:");
+//    int num = Convert.ToInt32(Console.ReadLine());
 
-    if (num % 2 == 0)
-        numbersArray[i] = num;
+//    if (num % 2 == 0)
+//        numbersArray[i] = num;
+//}
 
-}
+//Console.WriteLine("Even array: ");
+//for (int i = numbersArray[0]; i<6; i++)
+//    Console.WriteLine(numbersArray[i]);
 
-Console.WriteLine("Array: ");
-for (int i = numbersArray[0]; i<6; i++)
-    Console.WriteLine(numbersArray[i]);
+
 
 
 //    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
-
-
-
-
-
-
-
-
-
 
 
 

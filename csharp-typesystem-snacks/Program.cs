@@ -52,43 +52,40 @@
 
 
 //    4. Calcola la somma e la media dei numeri da 2 a 10.
-byte sum = 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10;
-Console.WriteLine($"Somma: {sum}");
+//byte sum = 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10;
+//Console.WriteLine($"Somma: {sum}");
 
-int average = sum / 9;
-Console.WriteLine($"Media: {average}");
-
-
-
-
-
-
-
-
-
-
-
-
-
+//int average = sum / 9;
+//Console.WriteLine($"Media: {average}");
 
 
 
 //Operatore modulo
-
-
-
-
-
-
-
-
-
-
-
-
-
 //    5. Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
+Console.WriteLine("Inserisci un numero:");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num % 2 == 0)
+    Console.WriteLine($"{num} è pari");
+else
+    Console.WriteLine($"{num} è dispari");
+
+
+
+
+
+
+
+
+
+
+
+
 //Array
+
+
+
+
 //    6. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 //	7. Crea un array vuoto.
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.

@@ -1,9 +1,7 @@
 ﻿//Istruzioni condizionali
+
 //1. L’utente inserisce due numeri in successione.
 //Il software stampa il maggiore.
-//2. L’utente inserisce due parole in successione.
-//	Il software stampa prima la parola più corta, poi la parola più lunga.
-
 Console.WriteLine("Inserisci un numero:");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
@@ -15,6 +13,25 @@ if (num1 > num2)
 else
     Console.WriteLine($"Il numero maggiore è: {num2}");
 
+
+//2. L’utente inserisce due parole in successione.
+//	Il software stampa prima la parola più corta, poi la parola più lunga.
+Console.WriteLine("Inserisci una parola:");
+string word1 = Console.ReadLine();
+
+Console.WriteLine("Inserisci un'altra parola:");
+string word2 = Console.ReadLine();
+
+if (word1.Length > word2.Length)
+{
+    Console.WriteLine($"Parola più corta: {word2}");
+    Console.WriteLine($"Parola più lunga: {word1}");
+}
+else
+{
+    Console.WriteLine($"Parola più corta: {word1}");
+    Console.WriteLine($"Parola più lunga: {word2}");
+}
 
 
 

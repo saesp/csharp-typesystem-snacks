@@ -76,34 +76,59 @@
 
 //    6. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 
-string[] guestList = { "Davide", "Thomas", "Claudia", "Emily", "Salvatore" };
+//string[] guestList = { "Davide", "Thomas", "Claudia", "Emily", "Salvatore" };
 
-Console.WriteLine("Inserisci il tuo nome");
-string nameUser = Console.ReadLine();
+//Console.WriteLine("Inserisci il tuo nome");
+//string nameUser = Console.ReadLine();
 
-if (guestList.Contains(nameUser))
-    Console.WriteLine("Sei invitato! Ci vediamo alla festa :)");
-else
-    Console.WriteLine("Sorry, non sei invitato.");
-
-
+//if (guestList.Contains(nameUser))
+//    Console.WriteLine("Sei invitato! Ci vediamo alla festa :)");
+//else
+//    Console.WriteLine("Sorry, non sei invitato.");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-//	7. Crea un array vuoto.
+//7.Crea un array vuoto.
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+int[] numbersArray = new int[6];
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine("Inserisci un numero:");
+    int num = Convert.ToInt32(Console.ReadLine());
+
+    if (num % 2 == 0)
+        numbersArray[i] = num;
+
+}
+
+Console.WriteLine("Array: ");
+for (int i = numbersArray[0]; i<6; i++)
+    Console.WriteLine(numbersArray[i]);
+
+
 //    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Ciclo while
 //    9. Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 //Random

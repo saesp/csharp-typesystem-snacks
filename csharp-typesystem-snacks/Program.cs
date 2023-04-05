@@ -63,30 +63,44 @@
 //Operatore modulo
 //    5. Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 
-Console.WriteLine("Inserisci un numero:");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num % 2 == 0)
-    Console.WriteLine($"{num} è pari");
-else
-    Console.WriteLine($"{num} è dispari");
-
-
-
-
-
-
-
-
-
+//Console.WriteLine("Inserisci un numero:");
+//int num = Convert.ToInt32(Console.ReadLine());
+//if (num % 2 == 0)
+//    Console.WriteLine($"{num} è pari");
+//else
+//    Console.WriteLine($"{num} è dispari");
 
 
 
 //Array
 
-
-
-
 //    6. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+string[] guestList = { "Davide", "Thomas", "Claudia", "Emily", "Salvatore" };
+
+Console.WriteLine("Inserisci il tuo nome");
+string nameUser = Console.ReadLine();
+
+if (guestList.Contains(nameUser))
+    Console.WriteLine("Sei invitato! Ci vediamo alla festa :)");
+else
+    Console.WriteLine("Sorry, non sei invitato.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //	7. Crea un array vuoto.
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
 //    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.

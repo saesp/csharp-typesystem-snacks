@@ -135,21 +135,22 @@
 
 //CICLO WHILE
 //    9. Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50 (49).
-int[] array = new int[49];
-int i = 0;
-int sum = 0;
 
-while (sum < 49)
-{
-Console.WriteLine("Inserisci un numero:");
-int num = Convert.ToInt32(Console.ReadLine());
+//int[] array = new int[49];
+//int i = 0;
+//int sum = 0;
 
-array[i] = num;
+//while (sum < 49)
+//{
+//Console.WriteLine("Inserisci un numero:");
+//int num = Convert.ToInt32(Console.ReadLine());
 
-sum += num;
+//array[i] = num;
 
-i++; 
-}
+//sum += num;
+
+//i++; 
+//}
 
 
 
@@ -159,6 +160,23 @@ i++;
 //    10. Fai inserire un numero, che chiameremo N, all’utente.
 //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 //Ogni volta che ne crei uno, stampalo a schermo.
+
+Random rnd = new Random();
+
+Console.WriteLine("Inserisci un numero:");
+int N = Convert.ToInt32(Console.ReadLine());
+
+int i = 0; 
+while (i < N)
+{
+    int[] array = new int[10]; 
+    
+    for (int index = 0; index < array.Length; i++)
+    {
+        array[index] = rnd.Next(1, 100);
+    }
+}
+
 
 
 

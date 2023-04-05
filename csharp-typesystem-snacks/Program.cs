@@ -44,9 +44,8 @@
 //    3. Il software deve chiedere per 10 volte all’utente di inserire un numero.
 //       Il programma stampa la somma di tutti i numeri inseriti.
 
-using System;
-
 int[] array = new int[10];
+int sum = 0; 
 
 for (var i = 0; i < 10; i++)
 {
@@ -54,11 +53,12 @@ for (var i = 0; i < 10; i++)
     int num = Convert.ToInt32(Console.ReadLine());
 
     array[i] = num;
+
+    sum += num;
 }
+    Console.WriteLine($"Somma: {sum}");
 
-int sum = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6] + array[7] + array[8] + array[9];
 
-Console.WriteLine($"Somma: { sum }");
 
 
 
@@ -120,9 +120,7 @@ Console.WriteLine($"Somma: { sum }");
 
 
 //    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
-
-
-
+int[] numbersArray = { 2, 5, 3, 4, 1 };
 
 
 
@@ -134,10 +132,15 @@ Console.WriteLine($"Somma: { sum }");
 
 //Ciclo while
 //    9. Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
+
+
 //Random
 //    10. Fai inserire un numero, che chiameremo N, all’utente.
 //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 //Ogni volta che ne crei uno, stampalo a schermo.
+
+
+
 //Funzioni
 //    11. Dare la possibilità di inserire due parole.
 //Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due.

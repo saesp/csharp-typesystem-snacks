@@ -119,27 +119,40 @@
 
 
 //    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
-int[] numbersArray = { 2, 5, 3, 4, 1 };
-int sum = 0; 
+//int[] numbersArray = { 2, 5, 3, 4, 1 };
+//int sum = 0; 
 
-for (int i=0; i<numbersArray.Length; i++)
+//for (int i=0; i<numbersArray.Length; i++)
+//{
+//    if (i % 2 != 0)
+//    sum += numbersArray[i]; 
+//}
+
+//Console.WriteLine("Somma: " + sum);
+
+
+
+
+//CICLO WHILE
+//    9. Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50 (49).
+int[] array = new int[49];
+int i = 0;
+int sum = 0;
+
+while (sum < 49)
 {
-    if (i % 2 != 0)
-    sum += numbersArray[i]; 
+Console.WriteLine("Inserisci un numero:");
+int num = Convert.ToInt32(Console.ReadLine());
+
+array[i] = num;
+
+sum += num;
+
+i++; 
 }
 
-Console.WriteLine("Somma: " + sum);
 
 
-
-
-
-
-
-
-
-//Ciclo while
-//    9. Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 
 
 //Random

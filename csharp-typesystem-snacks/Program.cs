@@ -2,45 +2,91 @@
 
 //1. L’utente inserisce due numeri in successione.
 //Il software stampa il maggiore.
-Console.WriteLine("Inserisci un numero:");
-int num1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Inserisci un altro numero:");
-int num2 = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Inserisci un numero:");
+//int num1 = Convert.ToInt32(Console.ReadLine());
 
-if (num1 > num2)
-    Console.WriteLine($"Il numero maggiore è: {num1}");
-else
-    Console.WriteLine($"Il numero maggiore è: {num2}");
+//Console.WriteLine("Inserisci un altro numero:");
+//int num2 = Convert.ToInt32(Console.ReadLine());
+
+//if (num1 > num2)
+//    Console.WriteLine($"Il numero maggiore è: {num1}");
+//else
+//    Console.WriteLine($"Il numero maggiore è: {num2}");
+
 
 
 //2. L’utente inserisce due parole in successione.
 //	Il software stampa prima la parola più corta, poi la parola più lunga.
-Console.WriteLine("Inserisci una parola:");
-string word1 = Console.ReadLine();
 
-Console.WriteLine("Inserisci un'altra parola:");
-string word2 = Console.ReadLine();
+//Console.WriteLine("Inserisci una parola:");
+//string word1 = Console.ReadLine();
 
-if (word1.Length > word2.Length)
-{
-    Console.WriteLine($"Parola più corta: {word2}");
-    Console.WriteLine($"Parola più lunga: {word1}");
-}
-else
-{
-    Console.WriteLine($"Parola più corta: {word1}");
-    Console.WriteLine($"Parola più lunga: {word2}");
-}
+//Console.WriteLine("Inserisci un'altra parola:");
+//string word2 = Console.ReadLine();
+
+//if (word1.Length > word2.Length)
+//{
+//    Console.WriteLine($"Parola più corta: {word2}");
+//    Console.WriteLine($"Parola più lunga: {word1}");
+//}
+//else
+//{
+//    Console.WriteLine($"Parola più corta: {word1}");
+//    Console.WriteLine($"Parola più lunga: {word2}");
+//}
 
 
 
 
 //Ciclo for
+
 //    3. Il software deve chiedere per 10 volte all’utente di inserire un numero.
-//Il programma stampa la somma di tutti i numeri inseriti.
+//       Il programma stampa la somma di tutti i numeri inseriti.
+
+//for (var i=0; i < 10; i++)
+//{
+//    Console.WriteLine("Inserisci un numero:");
+//    int num = Convert.ToInt32(Console.ReadLine());
+//}
+
+
 //    4. Calcola la somma e la media dei numeri da 2 a 10.
+byte sum = 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10;
+Console.WriteLine($"Somma: {sum}");
+
+int average = sum / 9;
+Console.WriteLine($"Media: {average}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Operatore modulo
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    5. Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 //Array
 //    6. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.

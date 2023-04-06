@@ -161,21 +161,27 @@
 //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 //Ogni volta che ne crei uno, stampalo a schermo.
 
-Random rnd = new Random();
+//Random rnd = new Random();
 
-Console.WriteLine("Inserisci un numero:");
-int N = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Inserisci un numero:");
+//int N = Convert.ToInt32(Console.ReadLine());
 
-int i = 0; 
-while (i < N)
-{
-    int[] array = new int[10]; 
+//int i = 0; 
+//while (i < N)
+//{
+//    int[] array = new int[10]; 
     
-    for (int index = 0; index < array.Length; i++)
-    {
-        array[index] = rnd.Next(1, 100);
-    }
-}
+//    for (int index = 0; index < array.Length; i++)
+//    {
+//        array[index] = rnd.Next(1, 100);
+
+//        Console.WriteLine("Inserisci un numero:");
+//    }
+//}
+
+//Console.WriteLine("array: ");
+//for (int i = numbersArray[0]; i<6; i++)
+//    Console.WriteLine(numbersArray[i]);
 
 
 
@@ -183,5 +189,28 @@ while (i < N)
 //Funzioni
 //    11. Dare la possibilità di inserire due parole.
 //Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due.
+
+
+
+
+
+
 //    12. Scrivere una funzione per verificare se un numero è pari o dispari.
-//Quindi chiedere un numero all'utente e comunicargli se è pari o dispari. (modificato) 
+//Quindi chiedere un numero all'utente e comunicargli se è pari o dispari.
+
+string EvenOrOdd(int num)
+{
+    if (num % 2 == 0)
+    {
+        return "pari";
+    }
+    else
+    {
+        return "dispari";
+    }
+}
+
+Console.Write("Inserisci un numero: "); 
+int numUser = Console.Read();
+
+Console.WriteLine($"Il tuo numero è: {EvenOrOdd(numUser)}");
